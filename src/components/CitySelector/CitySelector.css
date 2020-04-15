@@ -1,0 +1,27 @@
+/* .city-selector {
+  width: 100%;
+  color: rgb(217, 76, 230);
+  font-size: 1.7rem;
+  background-color: transparent;
+} */
+select {
+  text-align-last: center;
+  width: 100%;
+  color: rgb(67, 255, 239);
+  font-size: 1.7rem;
+  background-color: var(--dark-background-background-color);
+}
+
+.city-selector-border {
+  border-bottom: 2px solid rgb(67, 255, 239);
+}
+
+.city-selector-border select {
+  border: none;
+  outline: none;
+}
+
+.city-selector-border select:focus {
+  border: none;
+  outline: none;
+}

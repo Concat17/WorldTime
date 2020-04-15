@@ -6,7 +6,11 @@ import "./ClockGrid.css";
 
 const ClockGrid: React.FC<{}> = () => {
   return (
-    <div>
+    <div className="clock-grid">
+      <Clock />
+      <Clock />
+      <Clock />
+      <Clock />
       <Clock />
     </div>
   );

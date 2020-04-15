@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
-import { ThemeSwitcherContainer } from "../../store/store";
+import { ThemeSwitcherContainer } from "../../../store/store";
 
 import "./Background.css";
 import ClockGrid from "../ClockGrid/ClockGrid";

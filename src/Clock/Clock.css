@@ -1,9 +1,0 @@
-.clock {
-  width: 250px;
-  height: 150px;
-
-  border: solid 3px rgb(67, 255, 239);
-
-  display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
-}

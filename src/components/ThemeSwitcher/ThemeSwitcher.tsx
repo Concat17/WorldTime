@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ThemeSwitcherContainer } from "../../store/store";
+import { ThemeSwitcherContainer } from "../../../store/store";
 import "./ThemeSwitcher.css";
 
 const ThemeSwitcher: React.FC<{}> = () => {

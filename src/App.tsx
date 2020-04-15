@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { ThemeSwitcherContainer } from "../store/store";
 
-import Background from "./Background/Background";
+import Background from "./components/Background/Background";
 
 import "./App.css";
 

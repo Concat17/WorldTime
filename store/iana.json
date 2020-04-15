@@ -1,0 +1,9 @@
+{ 
+   
+    "local": "local",
+    "Paris": "Europe/Paris",
+    "Tokyo": "Asia/Tokyo",
+    "Rio de janeiro": "America/Argentina/Jujuy",
+    "New York": "America/New_York",
+    "London": "Europe/Belfast"
+}

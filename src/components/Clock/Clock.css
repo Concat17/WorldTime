@@ -1,0 +1,15 @@
+.clock {
+  width: 250px;
+  height: 150px;
+
+  border: solid 3px rgb(67, 255, 239);
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  margin-bottom: 100px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
