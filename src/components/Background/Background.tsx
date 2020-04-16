@@ -1,7 +1,8 @@
 import * as React from "react";
 
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
-import { ThemeSwitcherContainer } from "../../../store/store";
+import { ThemeSwitcherContainer } from "../../../store/themeChanger";
+import { ClocksContainer } from "../../../store/clocks";
 
 import "./Background.css";
 import ClockGrid from "../ClockGrid/ClockGrid";
@@ -11,7 +12,9 @@ const Background: React.FC<{}> = () => {
   return (
     <div className={`background ${themeSwitcher.theme}`}>
       <ThemeSwitcher />
-      <ClockGrid />
+      <ClocksContainer.Provider>
+        <ClockGrid />
+      </ClocksContainer.Provider>
     </div>
   );
 };

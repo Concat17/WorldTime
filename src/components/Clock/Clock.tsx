@@ -5,7 +5,7 @@ import CitySelector from "../CitySelector/CitySelector";
 import ClockDate from "../ClockDate/ClockDate";
 
 import { convertDate } from "../../logic/dateConverter";
-import { ThemeSwitcherContainer } from "../../../store/store";
+import { ThemeSwitcherContainer } from "../../../store/themeChanger";
 
 import "./Clock.css";
 
@@ -14,7 +14,7 @@ const Clock: React.FC<{}> = () => {
   const [date, setDate] = React.useState(convertDate(location));
 
   React.useEffect(() => {
-    let timerID = setInterval(() => tick(), 100);
+    let timerID = setInterval(() => tick(), 50);
     return function cleanup() {
       clearInterval(timerID);
     };

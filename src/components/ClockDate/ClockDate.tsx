@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { ThemeSwitcherContainer } from "../../../store/store";
+import { ThemeSwitcherContainer } from "../../../store/themeChanger";
 
 import "./ClockDate.css";
 

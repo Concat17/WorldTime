@@ -1,0 +1,25 @@
+.clock-adder {
+  width: 250px;
+  height: 150px;
+
+  margin-bottom: 100px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 10rem;
+  line-height: 150px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clock-adder-dark {
+  color: var(--dark-clock-color);
+}
+
+.clock-adder-light {
+  color: var(--light-clock-color);
+}

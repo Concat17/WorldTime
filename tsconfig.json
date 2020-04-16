@@ -9,5 +9,6 @@
     "jsx": "react",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "lib":["es2015"]
   } 
 }
