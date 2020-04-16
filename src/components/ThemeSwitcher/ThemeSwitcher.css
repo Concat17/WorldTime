@@ -1,9 +1,11 @@
-.switcher-dark {
-  background-color: white;
-  color: black;
+.fas {
+  margin: 2%;
 }
 
-.switcher-light {
-  background: black;
-  color: white;
+.fa-sun {
+  color: var(--light-background-background-color);
+}
+
+.fa-moon {
+  color: var(--dark-background-background-color);
 }

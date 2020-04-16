@@ -2,14 +2,26 @@
   width: 250px;
   height: 150px;
 
-  border: solid 3px rgb(67, 255, 239);
+  border: solid 3px var(--dark-clock-color);
 
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   margin-bottom: 100px;
+
+  font-family: "Roboto Mono", monospace;
 
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
+.clock-dark {
+  border: solid 3px var(--dark-clock-color);
+}
+
+.clock-light {
+  border: solid 3px var(--light-clock-color);
+}
+
+/* rgb(67, 255, 239) */

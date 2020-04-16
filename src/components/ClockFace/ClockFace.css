@@ -1,16 +1,22 @@
 .clock-face {
-  width: 100%;
-  color: rgb(67, 255, 239);
+  align-items: center;
+
+  font-size: 1.5rem;
+  padding: 0 3%;
+
   display: grid;
-  align-content: center;
-  justify-content: center;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  justify-items: center;
 }
 
 .clock-time {
-  letter-spacing: 1px;
-  min-width: 235px;
-  padding: 0px;
-  margin: 0px;
-  font-size: 4rem;
-  border: 0;
+  margin: 0;
+}
+
+.clock-face-dark {
+  color: var(--dark-clock-color);
+}
+
+.clock-face-light {
+  color: var(--light-clock-color);
 }

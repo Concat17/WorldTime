@@ -5,6 +5,7 @@ import CitySelector from "../CitySelector/CitySelector";
 import ClockDate from "../ClockDate/ClockDate";
 
 import { convertDate } from "../../logic/dateConverter";
+import { ThemeSwitcherContainer } from "../../../store/store";
 
 import "./Clock.css";
 
@@ -12,9 +13,8 @@ const Clock: React.FC<{}> = () => {
   const [location, setLocation] = React.useState("local");
   const [date, setDate] = React.useState(convertDate(location));
 
-  //Replaces componentDidMount and componentWillUnmount
   React.useEffect(() => {
-    let timerID = setInterval(() => tick(), 50);
+    let timerID = setInterval(() => tick(), 100);
     return function cleanup() {
       clearInterval(timerID);
     };
@@ -28,17 +28,13 @@ const Clock: React.FC<{}> = () => {
     setDate(convertDate(location));
   }
 
+  let themeSwitcher = ThemeSwitcherContainer.useContainer();
+
   return (
-    <div className="clock">
+    <div className={`clock clock-${themeSwitcher.theme}`}>
       <CitySelector onChangeLocation={handleChangeLocation} />
-      <ClockFace
-        time={
-          date.second % 2 === 0
-            ? date.toFormat("HH:mm:ss").toString()
-            : date.toFormat("HH mm ss").toString()
-        }
-      />
-      <ClockDate date={date.toFormat("ccc dd LLL 'UTC:' ZZ").toString()} />
+      <ClockFace time={date.toFormat("HH mm ss").toString()} />
+      <ClockDate date={date.toFormat("ccc dd LLL 'UTC:'ZZ").toString()} />
     </div>
   );
 };

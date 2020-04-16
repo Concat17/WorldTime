@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { ThemeSwitcherContainer } from "../../../store/store";
+
 import "./ClockDate.css";
 
 interface ClockDateProps {
@@ -7,7 +9,11 @@ interface ClockDateProps {
 }
 
 const ClockDate: React.FC<ClockDateProps> = ({ date }: ClockDateProps) => {
-  return <div className="clock-date">{date}</div>;
+  let themeSwitcher = ThemeSwitcherContainer.useContainer();
+
+  return (
+    <div className={`clock-date clock-date-${themeSwitcher.theme}`}>{date}</div>
+  );
 };
 
 export default ClockDate;

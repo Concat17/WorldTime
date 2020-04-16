@@ -1,5 +1,14 @@
 .clock-date {
-  width: auto;
-  color: rgb(67, 255, 239);
-  border-top: solid 2px rgb(67, 255, 239);
+  border-top: solid 2px;
+  text-align: center;
+}
+
+.clock-date-dark {
+  border-top-color: var(--dark-clock-color);
+  color: var(--dark-clock-color);
+}
+
+.clock-date-light {
+  border-top-color: var(--light-clock-color);
+  color: var(--light-clock-color);
 }

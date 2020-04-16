@@ -1,19 +1,8 @@
-/* .city-selector {
-  width: 100%;
-  color: rgb(217, 76, 230);
-  font-size: 1.7rem;
-  background-color: transparent;
-} */
 select {
   text-align-last: center;
   width: 100%;
-  color: rgb(67, 255, 239);
-  font-size: 1.7rem;
-  background-color: var(--dark-background-background-color);
-}
 
-.city-selector-border {
-  border-bottom: 2px solid rgb(67, 255, 239);
+  font-size: 1.7rem;
 }
 
 .city-selector-border select {
@@ -24,4 +13,22 @@ select {
 .city-selector-border select:focus {
   border: none;
   outline: none;
+}
+
+.select-dark {
+  background-color: var(--dark-background-background-color);
+  color: var(--dark-clock-color);
+}
+
+.city-selector-border-dark {
+  border-bottom: 2px solid var(--dark-clock-color);
+}
+
+.select-light {
+  background-color: var(--light-background-background-color);
+  color: var(--light-clock-color);
+}
+
+.city-selector-border-light {
+  border-bottom: 2px solid var(--light-clock-color);
 }
