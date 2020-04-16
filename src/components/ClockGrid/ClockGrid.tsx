@@ -14,11 +14,6 @@ const ClockGrid: React.FC<{}> = () => {
       {clocks.clocks.map((clock) => {
         return <Clock key={clock}></Clock>;
       })}
-      {/* <Clock />
-      <Clock />
-      <Clock />
-      <Clock />
-      <Clock /> */}
       <ClockAdder />
     </div>
   );

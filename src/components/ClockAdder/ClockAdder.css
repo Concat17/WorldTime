@@ -2,10 +2,11 @@
   width: 250px;
   height: 150px;
 
-  margin-bottom: 100px;
   display: grid;
   align-content: center;
   justify-content: center;
+  margin-bottom: 100px;
+
   font-family: "Roboto Mono", monospace;
   font-size: 10rem;
   line-height: 150px;

@@ -1,9 +1,7 @@
 :root {
   --dark-background-background-color: #222831;
-  --dark-switcher-color: #eeeeee;
   --dark-clock-color: #00adb5;
 
   --light-background-background-color: #c7d3d4ff;
-  --light-switcher-color: #eeeeee;
   --light-clock-color: #603f83ff;
 }

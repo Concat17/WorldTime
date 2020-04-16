@@ -5,3 +5,15 @@
   padding: 0% 10% 0;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media (max-width: 1100px) {
+  .clock-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 730px) {
+  .clock-grid {
+    grid-template-columns: 1fr;
+  }
+}

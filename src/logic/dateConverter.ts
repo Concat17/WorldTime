@@ -8,8 +8,3 @@ export function convertDate(location: string): DateTime {
   }
   return DateTime.local().setZone(zone);
 }
-// if (location === "Tokyo") {
-//   return DateTime.local().setZone("Asia/Tokyo");
-// } else if (location === "Paris") {
-//   return DateTime.local().setZone("Europe/Paris");
-// }
